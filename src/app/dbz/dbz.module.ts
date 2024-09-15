@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 import { MainPageComponent } from './pages/main-page.component';
 import { ListComponent } from './components/list/list.component';
-import { AddComponent } from './components/add/add.component';
+import { AddCharacterComponent } from './components/add/add.component';
 
 
 @NgModule({
@@ -12,10 +14,11 @@ import { AddComponent } from './components/add/add.component';
   declarations: [
     MainPageComponent,
     ListComponent,
-    AddComponent
+    AddCharacterComponent
   ],
   imports: [
     CommonModule,
+    FormsModule
   ]
 })
 export class DbzModule { }
